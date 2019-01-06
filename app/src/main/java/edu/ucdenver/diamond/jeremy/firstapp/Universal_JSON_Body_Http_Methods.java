@@ -23,7 +23,7 @@ import java.util.Base64;
  */
 
 
-public class Universal_JSON {
+public class Universal_JSON_Body_Http_Methods {
 
     /**
      * @param args the command line arguments
