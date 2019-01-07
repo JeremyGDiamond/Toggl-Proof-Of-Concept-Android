@@ -1,12 +1,13 @@
 # Toggl-Proof-Of-Concept-Android
 An app that stops and starts a timer in toggl using my java backend. For details regarding the implementation of this backend see [Java-Toggl-Control](https://github.com/JeremyGDiamond/Java-Toggl-Control)
-This app is only a proof of concept and is not meant to be used as a front end for toggl.
+This app is only a proof of concept and is not meant to be used as a front end for toggl. It dose however show my backend can control toggl timers.
 ## Note
 If you want to try this app out go to togglAccount.java and modify the uName variable to your api token found in the settings of the toggl website. If you don’t do this the errors are unintelligible.
 
 ## Layout
 
-There are simply 2 buttons that either start or stop a timer.
+There are simply 2 buttons on the main activity that either start or stop a timer.
+![alt text](https://github.com/JeremyGDiamond/Toggl-Proof-Of-Concept-Android/blob/master/screenCap.PNG "A screen capture of the layout")
 
 ## Classes
 
@@ -16,6 +17,7 @@ On a button press the corresponding class is instantiated to start a timer.
 Launches an AsyncTask and instantiates a togglAccount object called myAccount. Runs myAccount.readAllProjects() and myAccount.startATimer(0,0) as a doInBackground.
 ### NetworkBackgroundStop.java
 Launches an AsyncTask and instantiates a togglAccount object called myAccount. Runs myAccount.stopCurrent() as a doInBackground.
+
 ## Future plans
 
 The minimum viable product has 2 main features. 
